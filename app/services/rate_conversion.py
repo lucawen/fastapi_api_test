@@ -7,6 +7,15 @@ from app.repository.rate_conversion import RateConversionRepository
 class RateConversionService(ABC):
     @abstractmethod
     async def get_price(self, conversion_data: RateConversion) -> float:
+        """Get the price conversion from two currencies.
+
+        Args:
+            conversion_data (RateConversion): A rate conversion data object that
+            contains the necessary information to get the price conversion.
+
+        Returns:
+            float: the converted price.
+        """
         ...
 
 

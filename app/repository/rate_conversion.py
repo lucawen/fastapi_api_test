@@ -10,6 +10,19 @@ class RateConversionRepository(ABC):
     async def get_price(
         self, from_currency: str, to_currency: str, amount: float
     ) -> float:
+        """Get the conversion price from a generic location.
+
+        Args:
+            from_currency (str): The currency value to convert from. Ex: USD
+            to_currency (str): The currency value to convert to. Ex: BRL
+            amount (float): The amount to convert based on the from_currency.
+
+        Exceptions:
+            UnknownError: If an unknown error happens when trying to process the data.
+
+        Returns:
+            float: The converted price.
+        """
         ...
 
 

@@ -1,4 +1,5 @@
 def singleton(class_):
+    """Create a singleton object of a class."""
     instances = {}
 
     def getinstance(*args, **kwargs):
