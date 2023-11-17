@@ -63,3 +63,8 @@ This api is ready to accept debug from VSCODE. You just need to run these steps:
     ```$ make debug```
 
 3. At the `Run and Debug` page on VSCODE, start the debug option.
+
+# Test
+To test this api, you need to have already make the api run before. (As a example, already set the `.env` file).
+Run this command:
+```$ make test```
