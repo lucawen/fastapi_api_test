@@ -29,7 +29,8 @@ After running all the requirements, you can access the application over `http://
 The API provides the following endpoints:
 
 - `GET /api/v1/conversion/request`: request a rate conversion between two currencies. 
-
+Example:
+`http://127.0.0.1:8000/api/v1/conversion/request?value_from=BTC&value_to=USD&amount=10`
 
 If you are running the application, you can access `http://localhost:8000/redoc/` to access a interactive documentation with more detailed information.
 
