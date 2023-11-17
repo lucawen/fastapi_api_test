@@ -11,3 +11,7 @@ build:
 
 bash:
 	docker-compose exec web bash
+
+test:
+		docker-compose run --rm web sh -c "pytest"
+
